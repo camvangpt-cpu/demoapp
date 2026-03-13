@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Học tốt Toán 5 - Cánh Diều</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f6fbff;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0ea5e9, #2563eb);
+      color: white;
+      text-align: center;
+      padding: 48px 20px;
+    }
+
+    header h1 {
+      font-size: 2.3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.05rem;
+      opacity: 0.95;
+    }
+
+    nav {
+      background: #1d4ed8;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      padding: 14px 10px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 8px;
+    }
+
+    nav a:hover {
+      background: rgba(255,255,255,0.15);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 28px auto;
+      padding: 0 16px;
+    }
+
+    .section {
+      background: white;
+      border-radius: 18px;
+      padding: 24px;
+      margin-bottom: 22px;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+    }
+
+    .section h2 {
+      color: #2563eb;
+      margin-bottom: 14px;
+    }
+
+    .intro {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .badge {
+      background: #e0f2fe;
+      color: #075985;
+      padding: 10px 14px;
+      border-radius: 999px;
+      display: inline-block;
+      font-weight: bold;
+      margin: 6px 6px 0 0;
+    }
+
+    .author-box {
+      background: #eff6ff;
+      border: 2px dashed #60a5fa;
+      border-radius: 16px;
+      padding: 18px;
+    }
+
+    .author-box h3 {
+      color: #1d4ed8;
+      margin-bottom: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 16px;
+    }
+
+    .card {
+      background: #f8fbff;
+      border: 1px solid #dbeafe;
+      border-radius: 16px;
+      padding: 18px;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card h3 {
+      color: #111827;
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 14px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #1d4ed8;
+    }
+
+    .lesson-list li, .tips li {
+      margin-left: 20px;
+      margin-bottom: 8px;
+    }
+
+    .quiz-box {
+      background: #fefce8;
+      border: 1px solid #fde68a;
+      border-radius: 16px;
+      padding: 18px;
+      margin-top: 14px;
+    }
+
+    .result {
+      margin-top: 12px;
+      font-weight: bold;
+      color: #92400e;
+    }
+
+    footer {
+      text-align: center;
+      background: #dbeafe;
+      padding: 20px;
+      margin-top: 30px;
+      color: #1e3a8a;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .intro {
+        grid-template-columns: 1fr;
+      }
+
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HỌC TỐT TOÁN LỚP 5 - SÁCH CÁNH DIỀU</h1>
+    <p>Website hỗ trợ học tập vui vẻ, dễ hiểu và hiệu quả dành cho học sinh lớp 5</p>
+  </header>
+
+  <nav>
+    <a href="#gioithieu">Giới thiệu</a>
+    <a href="#chude">Chủ đề học</a>
+    <a href="#baitap">Bài tập</a>
+    <a href="#meo">Mẹo học tốt</a>
+    <a href="#tacgia">Tác giả</a>
+  </nav>
+
+  <div class="container">
+    <section id="gioithieu" class="section">
+      <h2>Giới thiệu website</h2>
+      <div class="intro">
+        <div>
+          <p>Website này được tạo ra nhằm giúp các bạn học sinh <strong>học tốt môn Toán lớp 5 theo sách Cánh Diều</strong>. Nội dung được trình bày rõ ràng, thân thiện, dễ học và phù hợp với học sinh tiểu học.</p>
+          <p style="margin-top:10px;">Tại đây, các bạn có thể ôn tập kiến thức, luyện bài tập, khám phá mẹo làm bài nhanh và tự kiểm tra kết quả của mình.</p>
+          <div style="margin-top:12px;">
+            <span class="badge">📘 Toán lớp 5</span>
+            <span class="badge">🪁 Bộ sách Cánh Diều</span>
+            <span class="badge">✏️ Học mà vui</span>
+          </div>
+        </div>
+        <div class="author-box">
+          <h3>Thông tin tác giả</h3>
+          <p><strong>Họ và tên:</strong> Trương Ngọc An Nhi</p>
+          <p><strong>Lớp:</strong> 5/6</p>
+          <p><strong>Trường:</strong> Tiểu học Xuân Phú</p>
+          <p><strong>Vai trò:</strong> Học sinh - tác giả website</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="chude" class="section">
+      <h2>Các chủ đề học tập</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>🔢 Số thập phân</h3>
+          <p>Ôn cách đọc, viết, so sánh và thực hiện các phép tính với số thập phân.</p>
+        </div>
+        <div class="card">
+          <h3>➕ Phép cộng, trừ, nhân, chia</h3>
+          <p>Luyện tập tính toán chính xác, nhanh và biết vận dụng vào bài toán thực tế.</p>
+        </div>
+        <div class="card">
+          <h3>📏 Đại lượng và đo đại lượng</h3>
+          <p>Học về độ dài, khối lượng, diện tích, thể tích, thời gian và đổi đơn vị đo.</p>
+        </div>
+        <div class="card">
+          <h3>📐 Hình học</h3>
+          <p>Tìm hiểu chu vi, diện tích, hình tam giác, hình thang, hình tròn và các bài toán liên quan.</p>
+        </div>
+        <div class="card">
+          <h3>🧠 Giải toán có lời văn</h3>
+          <p>Rèn kỹ năng đọc đề, tóm tắt, lập phép tính và trình bày bài giải rõ ràng.</p>
+        </div>
+        <div class="card">
+          <h3>🎯 Ôn tập cuối kì</h3>
+          <p>Tổng hợp kiến thức trọng tâm giúp học sinh tự tin khi kiểm tra và thi cuối kì.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="baitap" class="section">
+      <h2>Bài tập tương tác nhỏ</h2>
+      <p>Hãy thử làm nhanh một câu hỏi Toán lớp 5 nhé:</p>
+      <div class="quiz-box">
+        <p><strong>Câu hỏi:</strong> 3,5 + 2,4 = ?</p>
+        <button class="btn" onclick="checkAnswer('A')">A. 5,9</button>
+        <button class="btn" onclick="checkAnswer('B')" style="margin-left:8px;">B. 6,9</button>
+        <button class="btn" onclick="checkAnswer('C')" style="margin-left:8px;">C. 5,7</button>
+        <div id="result" class="result"></div>
+      </div>
+    </section>
+
+    <section id="meo" class="section">
+      <h2>Mẹo học tốt môn Toán lớp 5</h2>
+      <ul class="tips">
+        <li>Học thuộc các quy tắc tính toán cơ bản và đơn vị đo thường gặp.</li>
+        <li>Đọc kỹ đề bài, gạch chân dữ kiện quan trọng trước khi làm.</li>
+        <li>Trình bày sạch đẹp, rõ ràng từng bước giải.</li>
+        <li>Luyện tập thường xuyên mỗi ngày để ghi nhớ lâu hơn.</li>
+        <li>Tự kiểm tra lại kết quả sau khi làm bài xong.</li>
+      </ul>
+    </section>
+
+    <section id="tacgia" class="section">
+      <h2>Lời nhắn từ tác giả</h2>
+      <p>Em mong rằng website nhỏ này sẽ giúp các bạn yêu thích môn Toán hơn, học tập chăm chỉ hơn và đạt được nhiều kết quả tốt trong năm học. Chúc các bạn luôn tự tin, chăm ngoan và học thật giỏi nhé!</p>
+      <a class="btn" href="#gioithieu">Quay lên đầu trang</a>
+    </section>
+  </div>
+
+  <footer>
+    © 2026 | Website Học tốt Toán lớp 5 - Sách Cánh Diều<br>
+    Tác giả: Trương Ngọc An Nhi - Lớp 5/6 - Trường Tiểu học Xuân Phú
+  </footer>
+
+  <script>
+    function checkAnswer(answer) {
+      const result = document.getElementById('result');
+      if (answer === 'A') {
+        result.textContent = 'Chính xác! 3,5 + 2,4 = 5,9 🎉';
+      } else {
+        result.textContent = 'Chưa đúng rồi, em hãy thử lại nhé!';
+      }
+    }
+  </script>
+</body>
+</html>
